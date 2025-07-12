@@ -1,0 +1,288 @@
+@font-face {
+  font-family: "janna_lt_regular";
+  src: url("../fonts/janna_lt_regular.ttf") format("truetype");
+  /* font-weight: bold; */
+  font-style: normal;
+  font-display: swap;
+}
+
+.bg-shadow {
+  background-color: #fffaf3;
+}
+html[lang="ar"] {
+  font-family: "janna_lt_regular", serif;
+  direction: rtl;
+}
+html[lang="en"] {
+  font-family: "Poppins", sans-serif;
+  direction: ltr;
+}
+
+.active-language {
+  font-weight: 500;
+  cursor: default;
+}
+.language-btn {
+  transition: all 0.2s ease;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  /* padding-bottom: 64px !important; */
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+  /* width: 110px !important; */
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+/* .swiper-slide{
+
+        } */
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  display: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  display: none;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transform-origin: center;
+}
+
+/* Custom styles for Heavy Equipment Sale section */
+.hero-equipment-section {
+  background-color: #fffaf3;
+  position: relative;
+  overflow: hidden;
+}
+.hero-equipment-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/construction_sketch.jpg") no-repeat center center; /* Replace with actual sketch image path if available */
+  background-size: cover;
+  opacity: 0.1; /* Subtle overlay effect */
+  z-index: 0;
+}
+.hero-equipment-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* .hero-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+.hero-image-container {
+  position: relative;
+  display: inline-block; /* Adjusts to the image size */
+}
+
+.hero-image-container2 {
+position: relative;
+display: inline-block; /* Adjusts to the image size */
+}
+
+.hero-image-container7 {
+  position: relative;
+  display: inline-block; /* Adjusts to the image size */
+  }
+
+/* Background div styling */
+.background-div {
+position: absolute;
+  top: -13px;
+  left: 10px;
+  right: -11px;
+  bottom: -1px;
+  background-color: #FEECCE;
+  border-radius: 17px;
+  z-index: 1;
+}
+
+.background-div2 {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  right: -11px;
+  bottom: 20px;
+  background-color: #FEECCE;
+  border-radius: 38px;
+  z-index: 1;
+  border: 0.92px solid #FCB034;
+}
+.background-div3 {
+position: absolute;
+  top: -9px;
+  right: 1px;
+  left: -15px;
+  bottom: 4px;
+  background-color: #FEECCE;
+  border-radius: 50px;
+  z-index: 1;
+  border: 0.92px solid #FCB034;
+}
+
+/* Image styling */
+.hero-image-container img {
+  position: relative;
+  z-index: 2; /* In front of the background div */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: rounded corners for the image */
+}
+
+.hero-image-container2 img {
+position: relative;
+z-index: 2; /* In front of the background div */
+max-width: 100%;
+height: auto;
+}
+.hero-image-container7 img {
+  position: relative;
+  z-index: 2; /* In front of the background div */
+  max-width: 95%;
+  height: auto;
+  border-radius: 20px;
+  }
+
+.background-div4 {
+position: absolute;
+top: -9px;
+right: -1px;
+left: -15px;
+bottom: 4px;
+background-color: #FEECCE;
+border-radius: 30px;
+z-index: 1;
+border: 0.92px solid #FCB034;
+}
+
+.background-div5 {
+position: absolute;
+top: -9px;
+right: -1px;
+left: -15px;
+bottom: 4px;
+background-color: #FEECCE;
+border-radius: 10px;
+z-index: 1;
+height: 80%;
+margin-top: 30px;
+}
+.background-div7 {
+  position: absolute;
+  top: -9px;
+  right: 31px;
+  left: -12px;
+  bottom: 0px;
+  background-color: #FEECCE;
+  border-radius: 22px;
+  z-index: 1;
+  border: 0.92px solid #FCB034;
+}
+
+/* Optional: Wrapper styling to match your layout */
+.wrapper {
+  width: 100%;
+  max-width: 550px; /* Adjust based on your layout */
+  padding: 0 20px;
+  margin-top: 24px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-equipment-content {
+    flex-direction: column;
+  }
+  .hero-equipment-content > div {
+    width: 100% !important;
+  }
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004); */
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  background: #4e4e4e;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: #fcb034;
+  opacity: 1;
+}
+
+@media (max-width: 350px) {
+  td {
+    word-break: break-word; /* Break long words to prevent overflow */
+    hyphens: auto; /* Add hyphenation for long words */
+  }
+
+  .swiper-button-prev-categories,
+  .swiper-button-next-categories {
+    top: 70% !important; /* Move arrows further down (from 66.67% to 80%) */
+  }
+
+  .swiper-button-prev-cities,
+  .swiper-button-next-cities {
+    top: 72% !important;
+  }
+
+  .swiper-button-prev-equipment-sale,
+  .swiper-button-next-equipment-sale {
+    top: 83.5% !important;
+  }
+
+  .swiper-button-prev-equipment-rental,
+  .swiper-button-next-equipment-rental {
+    top: 83.7% !important;
+  }
+}
+
+/* Style for disabled navigation buttons */
+.swiper-button-disabled {
+  opacity: 0.5; /* Reduce opacity to indicate disabled state */
+  cursor: not-allowed; /* Change cursor to show it's not clickable */
+  pointer-events: none; /* Prevent interaction when disabled */
+}
+
+/* Ensure the transition applies to opacity for smooth effect */
+.swiper-button-prev-categories,
+.swiper-button-next-categories {
+  transition: opacity 0.3s ease;
+}
