@@ -97,20 +97,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               />
             </span>
             <button
-              class="language-btn text-[#FCB034] px-1 text-sm rounded-md transition-colors duration-200 max-[350px]:text-xs"
-              data-lang="en"
-              onclick="toggleLanguage('en')"
-            >
-              English
-            </button>
-            <span class="text-gray-700">/</span>
-            <button
-              class="language-btn px-1 text-sm rounded-md transition-colors duration-200 text-gray-700 max-[350px]:text-xs"
-              data-lang="ar"
-              onclick="toggleLanguage('ar')"
-            >
-              العربية
-            </button>
+            class="language-btn text-[#FCB034] px-1 text-sm rounded-md transition-colors duration-200 max-[350px]:text-xs"
+            data-lang="en"
+            onclick="toggleLanguage('en')"
+          >
+            English
+          </button>
+          <span class="text-gray-700">/</span>
+          <button
+            class="language-btn text-gray-700 px-1 text-sm rounded-md transition-colors duration-200  max-[350px]:text-xs"
+            data-lang="ar"
+            onclick="toggleLanguage('ar')"
+          >
+            العربية
+          </button>
           </div>
 
           <div class="flex space-x-2 md:space-x-4">
@@ -2462,7 +2462,7 @@ Whether you're looking to buy or rent, JCB backhoe loaders are available across 
       if (lang === "en") {
         window.location.href = "product_en.html";
       } else if (lang === "ar") {
-        window.location.href = "product_ar.html";
+        window.location.href = "backhoe-loader.html";
       }
     }
 
@@ -2529,17 +2529,17 @@ Whether you're looking to buy or rent, JCB backhoe loaders are available across 
       initializeSwipers(currentLang);
 
       // Update active language button
-      document.querySelectorAll(".language-btn").forEach((btn) => {
-        btn.classList.toggle(
-          "active-language",
-          btn.dataset.lang === currentLang
-        );
-        btn.classList.toggle(
-          "text-[#FCB034]",
-          btn.dataset.lang === currentLang
-        );
-        btn.classList.toggle("text-gray-700", btn.dataset.lang !== currentLang);
-      });
+      // document.querySelectorAll(".language-btn").forEach((btn) => {
+      //   btn.classList.toggle(
+      //     "active-language",
+      //     btn.dataset.lang === currentLang
+      //   );
+      //   btn.classList.toggle(
+      //     "text-[#FCB034]",
+      //     btn.dataset.lang === currentLang
+      //   );
+      //   btn.classList.toggle("text-gray-700", btn.dataset.lang !== currentLang);
+      // });
     });
 
     function shuffleSlides(wrapper) {
