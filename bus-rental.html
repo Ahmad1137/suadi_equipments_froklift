@@ -2302,9 +2302,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     function toggleLanguage(lang) {
       if (lang === "en") {
-        window.location.href = "product_en.html";
+        window.location.href = "bus-rental.html";
       } else if (lang === "ar") {
-        window.location.href = "product_ar.html";
+        window.location.href = "bus.html";
       }
     }
 
@@ -2371,17 +2371,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       initializeSwipers(currentLang);
 
       // Update active language button
-      document.querySelectorAll(".language-btn").forEach((btn) => {
-        btn.classList.toggle(
-          "active-language",
-          btn.dataset.lang === currentLang
-        );
-        btn.classList.toggle(
-          "text-[#FCB034]",
-          btn.dataset.lang === currentLang
-        );
-        btn.classList.toggle("text-gray-700", btn.dataset.lang !== currentLang);
-      });
+      // document.querySelectorAll(".language-btn").forEach((btn) => {
+      //   btn.classList.toggle(
+      //     "active-language",
+      //     btn.dataset.lang === currentLang
+      //   );
+      //   btn.classList.toggle(
+      //     "text-[#FCB034]",
+      //     btn.dataset.lang === currentLang
+      //   );
+      //   btn.classList.toggle("text-gray-700", btn.dataset.lang !== currentLang);
+      // });
     });
 
     function shuffleSlides(wrapper) {
